@@ -22,6 +22,7 @@ jobs:
           major_pattern: "/major(\\(.+\\))?:/"
           minor_pattern: "/feat(\\(.+\\))?:/"
           version_format: "${major}.${minor}.${patch}-prerelease${increment}"
+          bump_each_commit: true
         id: version
 
       - name: docker login
